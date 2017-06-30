@@ -5,6 +5,7 @@ const jwt =require('jsonwebtoken');
 
 const userOneId = new ObjectID();
 const usertwoId = new ObjectID();
+
 const users = [{
     _id: userOneId,
     email: 'joeabc@example.com',
@@ -17,16 +18,22 @@ const users = [{
     _id: usertwoId,
     email:'jen@example.com',
     password:'userTwoPass',
+    tokens:[{
+        access:'auth',
+        token: jwt.sign({_id:usertwoId,access:'auth'},'abc123').toString()
+    }]
 }]
 
 const todos = [{
     _id: new ObjectID(),
-    text:'First test todo'
+    text:'First test todo',
+    _creator: userOneId
 },{
     _id: new ObjectID(),
     text:'Second test tofo',
     completed: true,
-    completedAt: 333
+    completedAt: 333,
+    _creator:usertwoId
 }]
 
 const populateTodos = (done) => {
