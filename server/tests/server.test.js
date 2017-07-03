@@ -74,7 +74,7 @@ describe('GET /todos/:id', ()=>{
             .set('x-auth',users[0].tokens[0].token)
             .expect(200)
             .expect((res)=>{
-                expect(res.body.todos.text).toBe(todos[0].text)
+                expect(res.body.todo.text).toBe(todos[0].text)
             })
             .end(done)
     })
@@ -113,7 +113,7 @@ describe('DELETE /todos/:id', ()=>{
             .set('x-auth',users[0].tokens[0].token)
             .expect(200)
             .expect((res)=>{
-                expect(res.body.todos._id).toBe(hexID)
+                expect(res.body.todo._id).toBe(hexID)
             })
             .end((err,res)=>{
                 if(err){
