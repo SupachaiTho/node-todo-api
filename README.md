@@ -1,7 +1,7 @@
 # node-todo-api
 REST API and Authetication for todo application available on https://young-plains-28021.herokuapp.com
  
-This application was created via NodeJS
+This application was build via NodeJS
 
 ## API
 ### POST
