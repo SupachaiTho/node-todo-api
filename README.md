@@ -1,5 +1,5 @@
 # node-todo-api
-REST API and Authetication for todo application available on https://node-to-app-supachai.herokuapp.com/
+REST API and Authetication for todo application
  
 This application was build via NodeJS
 
