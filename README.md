@@ -1,9 +1,5 @@
 # node-todo-api
-REST API and Authetication for todo application 
-
-https://young-plains-28021.herokuapp.com
- 
-This application was build via NodeJS
+REST API and Authetication for todo applicati made with NodeJS during The Complete Node.js Developer Course.
 
 ## API
 ### POST
@@ -19,3 +15,7 @@ This application was build via NodeJS
 ### DELETE
 * DELETE '/todos/:id', to delete todo object
 * DELETE '/users/me/token', to remove token
+
+# Demo
+
+https://young-plains-28021.herokuapp.com
